@@ -1,0 +1,23 @@
+@import url("./import.css");
+
+/**/
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: var(--50-blue);
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    gap: 1rem;
+}
+
+.container a {
+    background-color: var(--0-white);
+    padding: 3rem;
+    width: 70vw;
+    border-radius: 1rem;
+}
