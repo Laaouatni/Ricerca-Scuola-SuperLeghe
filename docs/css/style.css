@@ -2,22 +2,55 @@
 
 /**/
 
+* {
+    transition: all 0.5s cubic-bezier(.5, .5, .5, 1.5);
+}
+
 body {
-    min-height: 100vh;
-    display: grid;
-    place-content: center;
     background-color: var(--50-blue);
+    font-family: poppins;
+    margin: 5rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--200-blue);
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .container {
     display: grid;
-    place-items: center;
-    gap: 1rem;
+    width: 100%;
 }
 
-.container a {
+.container div {
     background-color: var(--0-white);
-    padding: 3rem;
-    width: 70vw;
+    display: grid;
+    place-items: center;
+    font-size: 2rem;
+    flex: 1;
+    padding: 4rem 0;
     border-radius: 1rem;
+    box-shadow: var(--200-shadow);
+    transform: translatey(calc(var(--i)*-25%));
+    border: 1px solid var(--50-blue);
+}
+
+.container div:hover {
+    box-shadow: var(--500-shadow);
+    z-index: 2;
+    margin: 5rem 0;
+    transform: scale(1.1) rotate(2deg) translatey(calc(var(--i)*-25%));
+    background-color: var(--300-blue);
+    border: 1px solid transparent;
+}
+
+.container div:hover a {
+    color: var(--0-white);
 }
