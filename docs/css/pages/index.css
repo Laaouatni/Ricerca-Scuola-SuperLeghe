@@ -1,0 +1,71 @@
+* {
+    transition: all 0.3s cubic-bezier(.5, .5, .5, 1.5);
+}
+
+body {
+    background-color: var(--50-blue);
+    font-family: poppins;
+    margin: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--200-blue);
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: grid;
+    width: 100vw;
+    place-content: center;
+    height: 100vh;
+}
+
+.container div {
+    background-color: var(--0-white);
+    display: grid;
+    width: 80vw;
+    place-items: center;
+    font-size: 2rem;
+    flex: 1;
+    padding: 4rem 0;
+    border-radius: 0.7rem;
+    box-shadow: var(--200-shadow);
+    transform: translatey(calc(var(--i)*-25%));
+    border: 3px solid var(--300-blue);
+    max-width: 800px;
+    animation: enter 1s cubic-bezier(.5, .5, .5, 1.5);
+}
+
+.container div:hover {
+    box-shadow: var(--500-shadow);
+    z-index: 2;
+    margin: 5rem 0;
+    transform: scale(1.1) translatey(calc(var(--i)*-25%));
+    background-color: var(--300-blue);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+}
+
+.container div:hover a {
+    color: var(--0-white);
+}
+
+@keyframes enter {
+    0% {
+        transform: translatey(calc(var(--i)*100%)) translatex(calc(var(--i)*-100%)) rotate(calc(var(--i)*-10deg));
+        opacity: 0.5;
+    }
+    100% {
+        transform: translatey(calc(var(--i)*-25%)) translatex(0);
+        opacity: 1;
+    }
+}
