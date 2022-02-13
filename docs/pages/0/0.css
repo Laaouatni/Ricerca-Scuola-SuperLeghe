@@ -1,0 +1,108 @@
+@import url("../../css/import.css");
+
+/*  */
+
+.titolo-metalli {
+    font-family: 'supercell-magic', sans-serif;
+}
+
+body {
+    font-family: 'Poppins';
+}
+
+.titolo-metalli {
+    background-color: var(--50-blue);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    font-size: 3vw;
+    text-transform: uppercase;
+}
+
+
+/*make the text with animated gradient*/
+
+.titolo-metalli span {
+    background: linear-gradient(to right, #a5a6a8, #6d6d6d, #e0e0e0, #777676, #a5a6a8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: metal 2s ease-in-out infinite alternate;
+    background-size: 500%;
+}
+
+@keyframes metal {
+    0% {
+        background-position: 0% 50%;
+        transform: scale(1.2) rotate(-5deg);
+    }
+    100% {
+        background-position: 100% 50%;
+        transform: scale(0.6) rotate(5deg);
+    }
+}
+
+.titolo-metalli .images-container img {
+    height: 10rem;
+    object-fit: cover;
+}
+
+.images-container {
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.images-container>div {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.images-container>div:first-of-type {
+    place-items: center start;
+}
+
+.images-container>div:last-of-type {
+    place-items: center end;
+}
+
+.images-container>div:first-of-type>img {
+    animation: enterImagesLeft 2s cubic-bezier(.5, .5, .5, 1.5) forwards;
+    animation-delay: calc(var(--i) * 0.2s);
+    opacity: 0;
+    transform: translateX(-200%) scale(3);
+}
+
+.images-container>div:last-of-type>img {
+    animation: enterImagesRight 2s cubic-bezier(.5, .5, .5, 1.5) forwards;
+    animation-delay: calc(var(--i) * 0.5s);
+    opacity: 0;
+    transform: translateX(-200%) scale(3);
+}
+
+@keyframes enterImagesLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-200%) scale(1);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1.5);
+    }
+}
+
+@keyframes enterImagesRight {
+    0% {
+        opacity: 0;
+        transform: translateX(200%) scale(0.1);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1.5);
+    }
+}

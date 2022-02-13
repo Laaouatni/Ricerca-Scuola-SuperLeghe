@@ -1,3 +1,7 @@
+@import url("./css/style.css");
+
+/*  */
+
 * {
     transition: all 0.3s cubic-bezier(.5, .5, .5, 1.5);
 }
