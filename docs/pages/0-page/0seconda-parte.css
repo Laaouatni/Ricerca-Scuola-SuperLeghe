@@ -21,20 +21,22 @@ body {
     overflow: hidden;
 }
 
-.descrizione-metalli {
+.descrizione-metalli,
+.investimento-ricerca {
     padding: 0.5rem;
     display: grid;
     place-items: center;
     font-size: 1.2rem;
-    overflow-y: scroll;
     gap: 1rem;
 }
 
-.descrizione-metalli img {
+.descrizione-metalli img,
+.investimento-ricerca img {
     height: 7rem;
 }
 
-.descrizione-metalli div {
+.descrizione-metalli div,
+.investimento-ricerca div {
     display: flex;
     align-items: center;
     justify-items: center;
@@ -46,7 +48,8 @@ body {
     gap: 1rem;
 }
 
-.descrizione-metalli div:hover {
+.descrizione-metalli div:hover,
+.investimento-ricerca div:hover {
     background-color: var(--100-blue);
     border-color: var(--500-blue);
     color: var(--white);
@@ -54,11 +57,13 @@ body {
     opacity: 1 !important;
 }
 
-.descrizione-metalli div {
-    opacity: 0.5;
+.descrizione-metalli div,
+.investimento-ricerca div {
+    opacity: 0.3;
 }
 
-.descrizione-metalli>* {
+.descrizione-metalli>*,
+.investimento-ricerca>* {
     position: relative;
 }
 
