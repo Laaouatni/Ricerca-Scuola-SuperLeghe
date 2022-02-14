@@ -1,0 +1,69 @@
+@import url("../../css/import.css");
+
+/*  */
+
+html {
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+}
+
+body {
+    transition: all 0.5s cubic-bezier(.5, .5, .5, 1.5);
+}
+
+.full-container {
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.descrizione-metalli {
+    padding: 0.5rem;
+    display: grid;
+    place-items: center;
+    font-size: 1.2rem;
+    overflow-y: scroll;
+    gap: 1rem;
+}
+
+.descrizione-metalli img {
+    height: 7rem;
+}
+
+.descrizione-metalli div {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    border: 3px solid var(--100-blue);
+    border-radius: 1rem;
+    padding: 1rem 1rem 1rem 0;
+    transition: all 0.5s ease-in-out;
+    width: 80vw;
+    gap: 1rem;
+}
+
+.descrizione-metalli div:hover {
+    background-color: var(--100-blue);
+    border-color: var(--500-blue);
+    color: var(--white);
+    box-shadow: var(--500-shadow);
+    opacity: 1 !important;
+}
+
+.descrizione-metalli div {
+    opacity: 0.5;
+}
+
+.descrizione-metalli>* {
+    position: relative;
+}
+
+.esempi-aziende-container {
+    display: flex;
+    width: 82vw;
+    gap: 1rem;
+    justify-content: space-between;
+}

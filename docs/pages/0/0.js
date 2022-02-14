@@ -1,1 +1,0 @@
-let page0 = document.querySelector('.titolo-metalli');
