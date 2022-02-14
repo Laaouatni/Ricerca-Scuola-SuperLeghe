@@ -1,0 +1,29 @@
+@import url("../../css/import.css");
+
+/*  */
+
+.temperature-superleghe img {
+    height: 4rem;
+}
+
+.temperature-superleghe {
+    display: grid;
+}
+
+.temperature-superleghe div {
+    padding: 1rem;
+}
+
+.temperature-superleghe div section {
+    height: 5rem;
+    width: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.temperature-superleghe div section span {
+    background-color: var(--500-blue);
+    height: 1rem;
+    width: 1rem;
+    border-radius: 2rem;
+}

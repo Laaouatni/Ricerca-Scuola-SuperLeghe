@@ -31,7 +31,8 @@ body {
 }
 
 .descrizione-metalli,
-.investimento-ricerca {
+.investimento-ricerca,
+.temperature-superleghe {
     padding: 0.5rem;
     display: grid;
     place-items: center;
@@ -45,7 +46,8 @@ body {
 }
 
 .descrizione-metalli div,
-.investimento-ricerca div {
+.investimento-ricerca div,
+.temperature-superleghe div {
     display: flex;
     align-items: center;
     justify-items: center;
@@ -58,7 +60,8 @@ body {
 }
 
 .descrizione-metalli div:hover,
-.investimento-ricerca div:hover {
+.investimento-ricerca div:hover,
+.temperature-superleghe div:hover {
     background-color: var(--100-blue);
     border-color: var(--500-blue);
     color: var(--white);
@@ -67,12 +70,14 @@ body {
 }
 
 .descrizione-metalli div,
-.investimento-ricerca div {
+.investimento-ricerca div,
+.temperature-superleghe div {
     opacity: 0.3;
 }
 
 .descrizione-metalli>*,
-.investimento-ricerca>* {
+.investimento-ricerca>*,
+.temperature-superleghe>* {
     position: relative;
 }
 
