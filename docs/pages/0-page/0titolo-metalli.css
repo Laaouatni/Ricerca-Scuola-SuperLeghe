@@ -31,7 +31,6 @@ body {
     -webkit-text-fill-color: transparent;
     animation: metal 2s ease-in-out infinite alternate;
     background-size: 500%;
-    z-index: 2;
 }
 
 @keyframes metal {
@@ -76,6 +75,7 @@ body {
     animation-delay: calc(var(--i) * 0.2s);
     opacity: 0;
     transform: translateX(-200%) scale(3);
+    transition: all .5s ease-in-out;
 }
 
 .images-container>div:last-of-type>img {
@@ -83,6 +83,11 @@ body {
     animation-delay: calc(var(--i) * 0.5s);
     opacity: 0;
     transform: translateX(-200%) scale(3);
+    transition: all .5s ease-in-out;
+}
+
+.images-container img:hover {
+    transform: translatex(0) !important;
 }
 
 @keyframes enterImagesLeft {
@@ -92,7 +97,7 @@ body {
     }
     100% {
         opacity: 1;
-        transform: translateY(0) scale(1.5);
+        transform: translatex(0) scale(1.5);
     }
 }
 
@@ -103,6 +108,6 @@ body {
     }
     100% {
         opacity: 1;
-        transform: translateY(0) scale(1.5);
+        transform: translatex(0) scale(1.5);
     }
 }
