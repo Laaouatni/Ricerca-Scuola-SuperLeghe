@@ -27,7 +27,7 @@ body {
 }
 
 .descrizione-metalli {
-    background: linear-gradient(to top, var(--50-blue), var(--50-blue), var(--50-blue), var(--50-blue), var(--50-blue), var(--50-blue), white)
+    background: linear-gradient(to top, white, var(--50-blue), var(--50-blue), var(--50-blue), var(--50-blue), var(--50-blue), var(--50-blue), white)
 }
 
 .descrizione-metalli,

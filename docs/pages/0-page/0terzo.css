@@ -1,0 +1,12 @@
+@import url("../../css/import.css");
+
+/*  */
+
+.superleghe-introduzione>div {
+    display: grid;
+    place-items: center;
+}
+
+.superleghe-introduzione>*:hover {
+    opacity: 1;
+}
