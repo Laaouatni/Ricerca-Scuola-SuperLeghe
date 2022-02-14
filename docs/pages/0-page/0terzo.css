@@ -10,3 +10,22 @@
 .superleghe-introduzione>*:hover {
     opacity: 1;
 }
+
+.super-leghe-columns {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    width: 80vw;
+    justify-items: center;
+}
+
+.super-leghe-columns div {
+    justify-content: center;
+    align-content: center;
+}
+
+.super-leghe-columns li img {
+    height: 3rem;
+}
+
+.super-leghe-columns li {}
