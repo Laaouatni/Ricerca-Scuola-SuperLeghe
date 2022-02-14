@@ -6,6 +6,7 @@ html {
     scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -63,7 +64,21 @@ body {
 
 .esempi-aziende-container {
     display: flex;
-    width: 82vw;
+    width: 81vw;
     gap: 1rem;
-    justify-content: space-between;
+}
+
+.esempi-aziende-container>div {
+    flex: 1;
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+}
+
+.esempi-aziende-container>div:hover {
+    flex: 5;
+}
+
+.esempi-aziende-container img {
+    height: 4rem;
 }
