@@ -1,0 +1,25 @@
+@import url("../../css/import.css");
+
+/*  */
+
+.problema-metalli {
+    background: linear-gradient(to top, white, var(--50-blue), var(--50-blue), var(--50-blue), var(--50-blue), var(--50-blue), var(--50-blue), white);
+}
+
+.problema-metalli img {
+    width: 100%;
+    box-sizing: margin-box;
+    border-radius: 1rem;
+    transition: all 0.5s ease-in-out;
+    transform: scale(0.5);
+}
+
+.problema-metalli {
+    display: grid;
+    place-items: center;
+}
+
+.problema-metalli img:hover {
+    transform: scale(0.8);
+    box-shadow: 0 2rem 3rem var(--800-blue);
+}

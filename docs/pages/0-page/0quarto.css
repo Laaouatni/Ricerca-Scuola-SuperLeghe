@@ -67,6 +67,7 @@
     width: 10rem !important;
     height: 10rem !important;
     opacity: 0;
+    pointer-events: none;
 }
 
 .temperature-superleghe div:hover~.dettaglio-foto-card {
