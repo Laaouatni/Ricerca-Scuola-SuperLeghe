@@ -8,6 +8,7 @@
 
 .temperature-superleghe {
     display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .temperature-superleghe div {
@@ -15,10 +16,11 @@
 }
 
 .temperature-superleghe div section {
-    height: 5rem;
-    width: 5rem;
+    height: 15rem;
+    width: 15rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    place-items: center;
 }
 
 .temperature-superleghe section:nth-of-type(1) div section span {
@@ -31,23 +33,44 @@
 
 .temperature-superleghe section div section span {
     background-color: red;
-    height: 1rem;
-    width: 1rem;
-    border-radius: 2rem;
+    height: 50%;
+    width: 50%;
+    border-radius: 100%;
 }
 
-.temperature-superleghe section {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.temperature-superleghe section>div {
+    display: grid;
+    place-items: center;
+    grid-auto-flow: column;
 }
 
-@keyframes moveRandom {
-    0% {
-        transform: translate(0, 0);
-    }
-    100% {
-        /*need to be random*/
-        transform: translate(5px, 5px);
-    }
+.freddo-atomi span {
+    transition: all 0.1s ease-in;
+    position: relative;
+    top: var(--cool);
+    left: var(--cool)
+}
+
+.caldo-atomi span {
+    transition: all 0.2s ease-in;
+    position: relative;
+    top: var(--hot);
+    left: var(--hot);
+}
+
+.dettaglio-foto-card {
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    bottom: 0;
+    left: 7rem;
+    border-radius: 1rem;
+    width: 10rem !important;
+    height: 10rem !important;
+    opacity: 0;
+}
+
+.temperature-superleghe div:hover~.dettaglio-foto-card {
+    opacity: 1 !important;
+    bottom: -11rem;
+    transform: scale(1.5);
 }

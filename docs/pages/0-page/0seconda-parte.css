@@ -14,7 +14,7 @@ body {
 }
 
 ::selection {
-    background: goldenrod;
+    background: var(--500-blue);
     color: white;
 }
 
