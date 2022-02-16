@@ -1,2 +1,2 @@
 # Ricerca-Scuola-SuperLeghe
-ricerca sulle superleghe, non completata
+ricerca scolastica sulle superleghe.
